@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
+import Tilte from "./Title";
+import FormComponents from "./FormComponents";
+import CardList from "./CardList";
 
 export default function App() {
+  const [profiles, setProfiles] = useState([]);
+  const addNewProfile = newProfile => {
+    setProfiles([...profiles, newProfile]);
+  };
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <div className="header">
+        <Tilte title="The GitHub Card App" />
+        <FormComponents onSubmit={addNewProfile} />
+        <CardList profiles={profiles} />
+      </div>
     </div>
   );
 }

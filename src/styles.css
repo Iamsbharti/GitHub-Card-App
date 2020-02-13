@@ -2,3 +2,35 @@
   font-family: sans-serif;
   text-align: center;
 }
+.github-profile {
+  margin: 1rem;
+}
+.info {
+  display: inline-block;
+  margin-left: 12px;
+}
+.github-profile > img {
+  width: 100px;
+}
+.name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: "chiller";
+  color: "red";
+}
+form {
+  border: thin solid #ddd;
+  background-color: #fbfbfb;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: green;
+  font-family: "consolas";
+}
